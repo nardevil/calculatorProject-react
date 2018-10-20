@@ -1,0 +1,68 @@
+body {
+  background: #EBEBEB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Calibri';
+}
+
+.application {
+  height: 400px;
+  width: 600px;
+  background: rgb(166, 204, 235);  
+  position: relative;
+  padding: 0px;
+}
+
+/* new CSS */
+.row{
+  margin: 0px auto;;
+  padding: 0px;
+}
+
+.result {
+  background: rgb(48, 48, 48);
+  color: rgb(255, 255, 255);
+  display: block;
+  justify-content: flex-end;  
+  padding: 0 29px;
+  box-sizing: border-box;
+  height: 80px;
+  width: 100%;
+  font-size: 24px;
+  line-height: 80px;
+}
+
+.field {
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  height: 80px;
+  font-size: 24px;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  line-height: 80px;
+}
+
+.field[data-width="3"] { 
+  flex: 0 0 25%;
+  max-width: 25%;  
+}
+
+.field[data-width="4"] { 
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;  
+}
+
+.field[data-width="6"] { 
+  flex: 0 0 50%;
+  max-width: 50%;  
+}
+
+.field:hover {
+  background: #d7ddd3;
+  cursor: pointer;
+}
